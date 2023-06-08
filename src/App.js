@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Formulario from './Components/Formulario';
 import Container from 'react-bootstrap/Container';
+import ListadoClientes from './Components/ListadoClientes'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Fragment, useState } from 'react';
@@ -29,7 +30,12 @@ function App() {
             <Formulario
               agregarCliente={agregarCliente}
             /></Col>
-          <Col><h3>Listado de usuarios</h3></Col>
+          <Col>
+            <ListadoClientes
+              clientes={clientes}
+              setClientes={setClientes}
+            />
+          </Col>
         </Row>
       </Container>
     </Fragment>

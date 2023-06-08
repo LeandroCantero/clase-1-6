@@ -50,6 +50,9 @@ const Formulario = ({agregarCliente}) => {
         <Fragment>
             <Form onSubmit={submitForm}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <h2 >
+                        Registrar Usuario
+                    </h2>
                     <Form.Label>Nombre</Form.Label>
                     <Form.Control
                         type="text"
